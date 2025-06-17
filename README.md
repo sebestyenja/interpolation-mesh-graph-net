@@ -8,4 +8,4 @@ This repository contains the minimal code that runs the IMGN model on the Linear
 The model includes the base MGN graph model and the multi-scale and interpolation processing modes of the IMGN model as well.
 The training can be run with 1st to 5th order meshes and in the original high quality first order vesion as well.
 
-For detailed information about the model, please, read the full paper.
+Read the full paper for detailed information about the model.
