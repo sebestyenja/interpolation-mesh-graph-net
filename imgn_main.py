@@ -23,7 +23,7 @@ saving_path = "./"
 mode = ["MGN", "INTERPOLATION", "MULTISCALE"][0]
 print("Graph model:", mode)
 
-element_order = ["1", "2", "3", "4", "5", "hq"][4]
+element_order = ["1", "2", "3", "4", "5", "hq"][0]
 print("Mesh order:", element_order)
 
 test_example_idx = 12
