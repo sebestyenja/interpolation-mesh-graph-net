@@ -9,4 +9,5 @@ This repository contains the minimal code implementation that runs the IMGN mode
 The model includes the base MGN graph model and the multi-scale and interpolation processing modes of the IMGN model as well.
 The training can be run with 1st to 5th order meshes and in the original high quality first order vesion as well.
 
-Read the full paper for detailed information about the model.
+Read the full paper for detailed information about the model at https://doi.org/10.1016/j.engappai.2025.111535
+Find the FO-HO mesh-graph neural network dataset for linear elastostaticity of this paper at: Kaggle
