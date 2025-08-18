@@ -77,9 +77,7 @@ class static_dataset():
             raw_data = self._get_raw_data(index)
             return self._build_graph_data(raw_data, rotate_flag)
 
-    def reverse_output(self, network_output, data_pack):
-        network_output_signs = torch.where(network_output >= 0.0, 1, -1)
-        normalized_prediction = (torch.pow(np.e * torch.ones(network_output.shape), network_output.abs()) - 1) * network_output_signs     
+    def reverse_output(self, network_output, data_pack):   
         prediction = self.target_normalizer.inverse(normalized_prediction)
         return data_pack.mesh_pos, data_pack.target, prediction
 
@@ -205,4 +203,5 @@ class static_dataset():
 
 
         return graph_data_pack
+
 
