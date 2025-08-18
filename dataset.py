@@ -28,7 +28,7 @@ class static_dataset():
         
         self.mode_flag = mode
 
-        self.element_order = element_order[0]
+        self.element_order = element_order
         
         self.node_normalizer = normalizer_pack[0]
         self.edge_normalizer = normalizer_pack[1]
@@ -127,7 +127,7 @@ class static_dataset():
 
         load_direction = torch.tensor((0.0, 1.0, 0.0)).to(mesh_pos.device)
 
-        displacemenets = target[:, :2]
+        displacemenets = target[:, :2] - mesh_pos
         stress = target[:, 2]
                               
         cells = torch.cat((torch.arange(cells.shape[0])[:, None], cells), dim=1)
@@ -202,5 +202,6 @@ class static_dataset():
         target_pack = TargetPack(normalized_target, target)
                         
         graph_data_pack = GraphDataPack(node_pack, edge_pack, target_pack)
+
 
         return graph_data_pack
