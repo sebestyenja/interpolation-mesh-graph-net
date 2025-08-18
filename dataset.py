@@ -127,7 +127,7 @@ class static_dataset():
 
         load_direction = torch.tensor((0.0, 1.0, 0.0)).to(mesh_pos.device)
 
-        displacemenets = target[:, :2] - mesh_pos
+        displacemenets = target[:, :2]
         stress = target[:, 2]
                               
         cells = torch.cat((torch.arange(cells.shape[0])[:, None], cells), dim=1)
@@ -205,3 +205,4 @@ class static_dataset():
 
 
         return graph_data_pack
+
