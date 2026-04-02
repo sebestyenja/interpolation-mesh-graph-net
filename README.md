@@ -12,3 +12,10 @@ The training can be run with 1st to 5th order meshes and in the original high qu
 Read the full paper for detailed information about the model at https://doi.org/10.1016/j.engappai.2025.111535
 Find the FO-HO mesh-graph neural network dataset for linear elastostaticity of this paper at: Kaggle
 https://www.kaggle.com/datasets/sebestyenja/fo-ho-mesh-graph-neural-network-dataset/data?select=mesh_to_graph.py
+
+<img width="946" height="523" alt="image" src="https://github.com/user-attachments/assets/38f46a3b-1230-42f8-8400-310d55f43e67" />
+
+<img width="965" height="503" alt="image" src="https://github.com/user-attachments/assets/d33508ce-d2bc-41ed-8afd-e331a13ed8c9" />
+
+<img width="965" height="514" alt="image" src="https://github.com/user-attachments/assets/d32297a1-a3af-4e3e-a14f-23fa8b11ee09" />
+
